@@ -71,10 +71,10 @@ class Zoo:
 
         result = f"You have {len(self.workers)} workers\n"
         result += f"----- {len(keepers)} Keepers:\n"
-        result += '\n'.join([k.__repr__() for k in keepers]) + '\n'
+        result += '\n'.join([keeper.__repr__() for keeper in keepers]) + '\n'
         result += f"----- {len(caretakers)} Caretakers:\n"
-        result += '\n'.join([c.__repr__() for c in caretakers]) + '\n'
+        result += '\n'.join([caretaker.__repr__() for caretaker in caretakers]) + '\n'
         result += f"----- {len(vets)} Vets:\n"
-        result += '\n'.join([v.__repr__() for v in vets])
+        result += '\n'.join([vet.__repr__() for vet in vets])
 
         return result
